@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./img/Trophy.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="score">
+                <div id="heading">
+                    <p> ROCK<br />
+                        PAPER <br />
+                        SCISSORS</p>
+                </div>
+                <div id="score-boxes">
+                    <div class="computer-score-box">
+                        <p>COMPUTER SCORE</p>
+                        <p class="computerScore" id="computerScore">0</p>
+                    </div>
+                    <div class="player-score-box">
+                        <p>YOUR SCORE</p>
+                        <p class="playerScore" id="playerScore">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" id="img-container">
+                <div class="edge1"></div>
+                <div class="edge2"></div>
+                <div class="edge3"></div>
+                <img class="fist" id="rock" src="./img/rock.png" alt="Rock">
+                <img class="fingers" id="scissors" src="./img/scissors.png" alt="Scissors">
+                <img class="hand" id="paper" src="./img/paper.png" alt="Paper">
+            </div>
+            <div id="hidden">
+                <section class="result" id="result">
+                    <h2 class="you-picked">YOU PICKED</h2>
+                    <div class="your-choice-selected"></div>
+                    <div class="winner-result">
+                        <div class="result-text">
+                            <div id="won">
+                                <h1>YOU WIN</h1>
+                                <p>AGAINST PC</p>
+                            </div>
+                            <div id="lost">
+                                <h1>YOU LOST</h1>
+                                <p>AGAINST PC</p>
+                            </div>
+                            <div id="tie">
+                                <h1>TIE UP</h1>
+                            </div>
+                        </div>
+                        <div class="result-button">
+                            <button id="play-again">PLAY AGAIN</button>
+                            <button id="replay">REPLAY</button>
+                        </div>
+                    </div>
+                    <h2 class="pc-picked">PC PICKED</h2>
+                    <div class="pc-choice-selected"></div>
+                </section>
+            </div>
+        </div>
+        <div class="rules-box" id="rules-box" style="display: none">
+            <div class="closeable-box" id="closeable-box">
+                <button class="close-button" id="close-button">&times;</button>
+                <h3>Game Rules</h3>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper,
+                        scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-right">
+
+            <button id="rules">RULES</button>
+            <button id="next">NEXT</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

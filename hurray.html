@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hurray.css">
+    <link rel="icon" href="./img/Trophy.png">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="img-box">
+            <img class="overlay trophy" src="./img/Trophy.png">
+            <img class="overlay stars" src="./img/Stars.png">
+        </div>
+        <div class="hurray">HURRAY!!</div>
+        <div class="you-won">YOU WON THE GAME</div>
+
+        <div class="result-button">
+            <button id="play-again" onclick="location.href='index.html'">PLAY AGAIN</button>
+        </div>
+
+        <div class="rules-box" id="rules-box" style="display: none">
+            <div class="closeable-box" id="closeable-box">
+                <button class="close-button" id="close-button">&times;</button>
+                <h3>Game Rules</h3>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper,
+                        scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-right">
+            <button id="rules">RULES</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('play-again').style.display = 'block';
+    </script>
+</body>
+
+</html>
